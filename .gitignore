@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv*/
+venv*/
+personal-llm/node_modules/
+personal-llm/dist/
+.DS_Store
+Thumbs.db
