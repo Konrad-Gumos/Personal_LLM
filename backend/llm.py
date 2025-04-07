@@ -4,15 +4,16 @@ import os
 from dotenv import load_dotenv
 
 # Ładowanie .env
-load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-pro")
+load_dotenv(dotenv_path="backend/.env")
+
+api_key = os.getenv("GEMINI_API_KEY")
+if not api_key:
+    raise ValueError("🚨 Brakuje GEMINI_API_KEY w pliku .env!")
+
+genai.configure(api_key=api_key)
+model = genai.GenerativeModel("models/gemini-2.0-flash")
 
 async def generate_text(prompt: str, style: str) -> str:
-
-    print(prompt)
-    print(style)
-
     full_prompt = f"""Na podstawie poniższego stylu wypowiedzi użytkownika:
 
 {style}
@@ -20,10 +21,7 @@ async def generate_text(prompt: str, style: str) -> str:
 Wygeneruj tekst odpowiadający temu stylowi, odpowiadając na prośbę:
 "{prompt}"
 """
-
-    print(full_prompt, flush=True)
-
-    response = await model.generate_content_async(full_prompt)
+    response = model.generate_content(full_prompt)
 
     if response and hasattr(response, "text"):
         return response.text
