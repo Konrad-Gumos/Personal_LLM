@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81bf9c74-d6ad-4e4d-ad53-8d3165af167e" name="Changes" comment="Initial">
+    <list default="true" id="81bf9c74-d6ad-4e4d-ad53-8d3165af167e" name="Changes" comment="Backend+partial front #2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/llm.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/llm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal-llm/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/personal-llm/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal-llm/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/personal-llm/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal-llm/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/personal-llm/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal-llm/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/personal-llm/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal-llm/tailwind.config.js.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +91,8 @@
       <workItem from="1743969216340" duration="93000" />
       <workItem from="1744037735397" duration="2777000" />
       <workItem from="1744040527520" duration="1018000" />
-      <workItem from="1744042687197" duration="663000" />
+      <workItem from="1744042687197" duration="3040000" />
+      <workItem from="1744100593169" duration="5678000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -104,7 +110,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743969254784</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Backend+partial front">
+      <option name="closed" value="true" />
+      <created>1744043552996</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744043552996</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Backend+partial front #2">
+      <option name="closed" value="true" />
+      <created>1744043647720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744043647720</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +149,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Backend+partial front" />
+    <MESSAGE value="Backend+partial front #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend+partial front #2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1743954686211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />

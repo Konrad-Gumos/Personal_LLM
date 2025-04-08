@@ -14,15 +14,15 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel("models/gemini-2.0-flash")
 
 async def generate_text(prompt: str, style: str) -> str:
-    full_prompt = f"""Na podstawie poniższego stylu wypowiedzi użytkownika:
+    full_prompt = f"""Based on a user's writing style:
 
 {style}
 
-Wygeneruj tekst odpowiadający temu stylowi, odpowiadając na prośbę:
+Generate text based on this style responding to request:
 "{prompt}"
 """
     response = model.generate_content(full_prompt)
 
     if response and hasattr(response, "text"):
         return response.text
-    return "Nie udało się wygenerować odpowiedzi"
+    return "Answer could not be generated."
