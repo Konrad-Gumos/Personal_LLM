@@ -22,7 +22,6 @@ export default function App() {
   };
 
   return (
-    // <div className="min-h-screen bg-gradient-to-b from-zinc-900 to-gray-800 text-zinc-100 flex items-center justify-center px-4">
     <div className="min-h-screen w-full text-zinc-100 flex items-center justify-center px-4 gap-6"> 
       <div className="w-[70%] h-[30vh] max-w-2xl mx-auto bg-[#3B1C32] rounded-2xl border border-[#A64D79] p-8 shadow-2xl flex flex-col gap-6">
         <h1 className="text-4xl font-bold text-center color-zinc-700">Personal LLM</h1>
@@ -44,7 +43,7 @@ export default function App() {
         />
 
         <button
-          className="w-[95%] mx-auto bg-blue-500 hover:bg-blue-600 transition-all px-6 py-2 rounded-xl font-semibold disabled:opacity-50 mb-5"
+          className="w-[95%] mx-auto bg-blue-500 hover:bg-blue-600 transition-all px-6 py-2 rounded-xl font-semibold disabled:opacity-50 mt-6"
           onClick={handleGenerate}
           disabled={loading}
         >
